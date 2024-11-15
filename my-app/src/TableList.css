@@ -1,0 +1,78 @@
+.table-list {
+    width: 200px;
+    padding: 20px;
+    background-color: #2c1a4c;
+    color: #ffffff;
+    border-radius: 8px;
+    height: 500px;
+    margin-right: 1px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-header h3 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.table-header select {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #4c308a;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.tables {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.table-item {
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table-item.available {
+    background-color: #4caf50; 
+    color: #ffffff;
+}
+
+.table-item.occupied {
+    background-color: #f44336; 
+    color: #ffffff;
+}
+
+.table-item.selected {
+    background-color: yellow;
+}
+
+
+
+.confirm-btn {
+    background-color: #008CBA; /* Màu xanh cho nút */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 45px;
+}
+
+.confirm-btn:hover {
+    background-color: #005f6a; /* Đổi màu khi hover */
+}
+
+
