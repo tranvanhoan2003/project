@@ -102,10 +102,3 @@ export default TableList;
 
 
 
-
-
-
-
-
-
-

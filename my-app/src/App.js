@@ -21,10 +21,12 @@ function App() {
   };
 
 
+
   return (
     <div className="app">
       <TableList 
       onTableSelected={handleTableSelection} />
+      
       
       <Menu 
         selectedTableName={selectedTableName} 
@@ -42,3 +44,6 @@ function App() {
 }
 
 export default App;
+
+
+
