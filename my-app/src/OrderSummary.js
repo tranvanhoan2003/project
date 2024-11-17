@@ -38,7 +38,7 @@ function OrderSummary({ selectedTableName, orderCode, orderUpdateTrigger }) {
                         alert(data.message); // Thông báo thành công hoặc thất bại
                     }
                 })
-                .catch((error) => console.error('Lỗi khi cập nhật trạng thái:', error));
+                .catch((error) => console.error('Lỗi khi cập nhật trạng tháiii:', error));
         } else {
             alert('Không có mã hóa đơn hoặc tên bàn để thanh toán!');
         }
