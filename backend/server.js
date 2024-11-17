@@ -5,7 +5,7 @@ const tableListRoutes = require('./routes/tableListRoutes');
 const menuRoutes = require('./routes/menuRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const orderFoodRoutes = require('./routes/orderFoodRoutes');
-// const orderSummaryRoutes = require('./routes/orderSummaryRoutes');
+const orderSummaryRoutes = require('./routes/orderSummaryRoutes');
 
 
 
@@ -21,7 +21,7 @@ app.use('/api/tables', tableListRoutes); // Route cho bàn
 app.use('/api/menus', menuRoutes);       // Route cho menu
 app.use('/api/orders', orderRoutes);
 app.use('/api/order_food', orderFoodRoutes);
-// app.use('/api/orderSummary', orderSummaryRoutes);
+app.use('/api/orderSummary', orderSummaryRoutes);
 
 
 

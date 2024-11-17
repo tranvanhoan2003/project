@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import './Menu.css';
 
-function Menu({ selectedTableName, setOrderCode }) {
+function Menu({ selectedTableName, setOrderCode, setOrderUpdateTrigger }) {
     const [menuItems, setMenuItems] = useState([]);
     const [orderCode, setOrderCodeLocal] = useState('');
 
     useEffect(() => {
-        // Lấy danh sách món ăn từ backend
         fetch('http://localhost:3001/api/menus/names')
             .then((response) => response.json())
             .then((data) => setMenuItems(data))
             .catch((error) => console.error('Error fetching data:', error));
 
-        // Lấy mã đơn hàng từ backend dựa trên tên bàn
         if (selectedTableName) {
             fetch(`http://localhost:3001/api/order_food/code?tableName=${selectedTableName}`)
                 .then((response) => response.json())
                 .then((data) => {
                     if (data && data.code) {
-                        setOrderCodeLocal(data.code);  // Cập nhật mã đơn hàng nội bộ
-                        setOrderCode(data.code); // Truyền mã đơn hàng lên App.js
+                        setOrderCodeLocal(data.code);
+                        setOrderCode(data.code);
                     } else {
                         alert('Không tìm thấy mã đơn hàng cho bàn này.');
                     }
@@ -29,13 +27,12 @@ function Menu({ selectedTableName, setOrderCode }) {
     }, [selectedTableName, setOrderCode]);
 
     const handleAddToCart = (item, quantityInput) => {
-        const quantity = parseInt(quantityInput.value, 10) || 1;  // Sử dụng giá trị từ input, mặc định là 1
+        const quantity = parseInt(quantityInput.value, 10) || 1;
         if (selectedTableName) {
             if (!orderCode) {
                 alert('Vui lòng xác nhận đơn hàng trước khi thêm món.');
                 return;
             }
-            // Gửi request thêm món vào giỏ hàng (bảng order_food)
             fetch('http://localhost:3001/api/order_food/create', {
                 method: 'POST',
                 headers: {
@@ -46,6 +43,7 @@ function Menu({ selectedTableName, setOrderCode }) {
                 .then((response) => response.json())
                 .then((data) => {
                     alert(`Đã thêm ${quantity} món ${item.name} vào giỏ hàng!`);
+                    setOrderUpdateTrigger((prev) => prev + 1); // Tăng giá trị trigger để thông báo cập nhật
                 })
                 .catch((error) => console.error('Lỗi khi thêm vào giỏ hàng:', error));
         } else {
@@ -67,8 +65,8 @@ function Menu({ selectedTableName, setOrderCode }) {
                             <input
                                 type="number"
                                 min="1"
-                                defaultValue={1}  // Mặc định là 1
-                                ref={(input) => item.quantityInput = input}  // Lưu tham chiếu tới input
+                                defaultValue={1}
+                                ref={(input) => (item.quantityInput = input)}
                             />
                             <button onClick={() => handleAddToCart(item, item.quantityInput)}>
                                 Thêm vào giỏ

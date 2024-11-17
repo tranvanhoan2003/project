@@ -11,7 +11,7 @@ const Name = {
         });
     },
     updateStatus: (id, status, callback) => {
-        const sql = 'UPDATE tables SET status = ? WHERE id = ?';
+        const sql = "UPDATE tables SET status = ? WHERE id = '?'";
         db.query(sql, [status, id], (err, results) => {
             if (err) {
                 return callback(err);
