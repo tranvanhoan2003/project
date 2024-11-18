@@ -8,4 +8,7 @@ router.get('/orderDetails', orderSummaryController.getOrderDetails);
 // Cập nhật trạng thái đơn hàng và bàn khi thanh toán
 router.post('/updateStatus', orderSummaryController.updateOrderStatus);
 
+router.post('/deleteOrderItem', orderSummaryController.deleteOrderItem);
+
+
 module.exports = router;

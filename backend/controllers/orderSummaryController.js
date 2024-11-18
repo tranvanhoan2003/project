@@ -39,6 +39,28 @@ const orderSummaryController = {
             });
         });
     },
+
+    deleteOrderItem: (req, res) => {
+        const { orderId, orderCode } = req.body; // Lấy `orderId` và `orderCode` từ yêu cầu
+    
+        if (!orderId || !orderCode) {
+            return res.status(400).json({ message: 'Thiếu thông tin để xóa món ăn.' });
+        }
+    
+        OrderSummary.deleteOrderItem(orderId, orderCode, (err, results) => {
+            if (err) {
+                console.error('Lỗi khi xóa món ăn:', err);
+                return res.status(500).json({ message: 'Lỗi máy chủ khi xóa món ăn.' });
+            }
+            if (results.affectedRows === 0) {
+                return res.status(404).json({ message: 'Không tìm thấy món ăn trong hóa đơn.' });
+            }
+            res.json({ message: 'Xóa món ăn thành công.' });
+        });
+    }
+    
+    
+
 };
 
 module.exports = orderSummaryController;

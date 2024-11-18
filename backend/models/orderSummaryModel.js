@@ -4,7 +4,11 @@ const OrderSummary = {
     // Lấy chi tiết đơn hàng theo mã hóa đơn
     getOrderDetailsByCode: (orderCode, callback) => {
         const sql = `
-            SELECT food.name AS food_name, order_food.quantity, food.price
+            SELECT 
+                order_food.id AS order_id, 
+                food.name AS food_name, 
+                order_food.quantity, 
+                food.price
             FROM order_food
             JOIN food ON order_food.food_id = food.id
             WHERE order_food.code_id = ?;
@@ -38,6 +42,18 @@ const OrderSummary = {
             callback(null, results);
         });
     },
+    
+    deleteOrderItem: (orderId, orderCode, callback) => {
+        const sql = `DELETE FROM order_food WHERE id = ? AND code_id = ?`;
+        db.query(sql, [orderId, orderCode], (err, results) => {
+            if (err) {
+                return callback(err);
+            }
+            callback(null, results);
+        });
+    }
+    
+
 };
 
 module.exports = OrderSummary;
