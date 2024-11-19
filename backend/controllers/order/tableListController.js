@@ -1,4 +1,5 @@
-const Name = require('../models/tableListModel');
+// const Name = require('../../models/tableListModel');
+const Name = require('../../models/order/tableListModel');
 
 const tableListController = {
     getAllNames: (req, res) => {

@@ -1,5 +1,5 @@
 // models/orderModel.js
-const db = require('../config/db');
+const db = require('../../config/db');
 
 const Order = {
     create: (tableId, status, callback) => {

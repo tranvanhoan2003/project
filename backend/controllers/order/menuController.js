@@ -1,5 +1,5 @@
 // backend/controllers/menuController.js
-const Menu = require('../models/menuModel');
+const Menu = require('../../models/order/menuModel');
 
 const menuController = {
     getAllMenus: (req, res) => {

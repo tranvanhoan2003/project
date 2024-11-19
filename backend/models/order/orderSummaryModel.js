@@ -1,4 +1,4 @@
-const db = require('../config/db');
+const db = require('../../config/db');
 
 const OrderSummary = {
     // Lấy chi tiết đơn hàng theo mã hóa đơn

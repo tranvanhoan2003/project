@@ -1,5 +1,5 @@
 // backend/models/menuModel.js
-const db = require('../config/db');
+const db = require('../../config/db');
 
 const Menu = {
     getAllMenus: (callback) => {

@@ -1,5 +1,6 @@
 // controllers/orderController.js
-const Order = require('../models/orderModel');
+// const Order = require('../../models/orderModel');
+const Order = require('../../models/order/orderModel');
 
 exports.createOrder = (req, res) => {
     const { table_id, status } = req.body;
