@@ -1,4 +1,5 @@
-const OrderSummary = require('../models/orderSummaryModel');
+// const OrderSummary = require('../../models/orderSummaryModel');
+const OrderSummary = require('../../models/order/orderSummaryModel');
 
 const orderSummaryController = {
     // Lấy chi tiết đơn hàng theo mã hóa đơn

@@ -1,11 +1,16 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const tableListRoutes = require('./routes/tableListRoutes');
-const menuRoutes = require('./routes/menuRoutes');
-const orderRoutes = require('./routes/orderRoutes');
-const orderFoodRoutes = require('./routes/orderFoodRoutes');
-const orderSummaryRoutes = require('./routes/orderSummaryRoutes');
+// const tableListRoutes = require('./routes/tableListRoutes');
+const tableListRoutes = require('./routes/order/tableListRoutes');
+// const menuRoutes = require('./routes/menuRoutes');
+const menuRoutes = require('./routes/order/menuRoutes');
+// const orderRoutes = require('./routes/orderRoutes');
+const orderRoutes = require('./routes/order/orderRoutes');
+// const orderFoodRoutes = require('./routes/orderFoodRoutes');
+const orderFoodRoutes = require('./routes/order/orderFoodRoutes');
+// const orderSummaryRoutes = require('./routes/orderSummaryRoutes');
+const orderSummaryRoutes = require('./routes/order/orderSummaryRoutes');
 
 
 

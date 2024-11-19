@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const orderSummaryController = require('../controllers/orderSummaryController');
+// const orderSummaryController = require('../controllers/orderSummaryController');
+const orderSummaryController = require('../../controllers/order/orderSummaryController');
 
 // Lấy chi tiết đơn hàng
 router.get('/orderDetails', orderSummaryController.getOrderDetails);

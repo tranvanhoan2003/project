@@ -1,4 +1,4 @@
-const db = require('../config/db');  // Kết nối cơ sở dữ liệu từ config
+const db = require('../../config/db');  // Kết nối cơ sở dữ liệu từ config
 const orderFoodModel = {};
 
 // Hàm thêm món ăn vào bảng order_food

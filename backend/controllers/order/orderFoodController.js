@@ -1,4 +1,5 @@
-const orderFoodModel = require('../models/orderFoodModel');
+// const orderFoodModel = require('../../models/order/orderFoodModel');
+const orderFoodModel = require('../../models/order/orderFoodModel');
 
 // Hàm thêm món vào giỏ hàng (bảng order_food)
 exports.createOrderFood = (req, res) => {
