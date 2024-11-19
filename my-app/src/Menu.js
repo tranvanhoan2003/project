@@ -54,7 +54,7 @@ function Menu({ selectedTableName, setOrderCode, setOrderUpdateTrigger }) {
     return (
         <div className="menu">
             <h2>hien thi code:{orderCode}</h2>
-            <h3>Order cho bàn: {selectedTableName}</h3>
+            <h3>Order cho bànn: {selectedTableName}</h3>
             <div className="menu-items">
                 {menuItems.map((item, index) => (
                     <div className="menu-item" key={index}>
