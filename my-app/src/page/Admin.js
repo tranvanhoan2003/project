@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Sidebar from "../admin/Sidebar";
 import Dashboard from "../admin/Dashboard";
-import Food from "../admin/Food";
 import Category from "../admin/Category";
+import Food from "../admin/Food";
+import Table from "../admin/Table";
 import "./Admin.css"; 
 
 function Admin() {
@@ -20,6 +21,7 @@ function Admin() {
         {activePage === "Dashboard" && <Dashboard />}
         {activePage === "Category" && <Category />}
         {activePage === "Food" && <Food />}
+        {activePage === "Table" && <Table/>}
         
       </div>
     </div>
