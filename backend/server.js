@@ -12,6 +12,10 @@ const orderFoodRoutes = require('./routes/order/orderFoodRoutes');
 // const orderSummaryRoutes = require('./routes/orderSummaryRoutes');
 const orderSummaryRoutes = require('./routes/order/orderSummaryRoutes');
 
+const categoryRoutes = require("./routes/admin/categoryRoutes"); // Đường dẫn tới file route
+const foodRoutes = require("./routes/admin/foodRoutes");
+
+
 
 
 const app = express();
@@ -27,6 +31,9 @@ app.use('/api/menus', menuRoutes);       // Route cho menu
 app.use('/api/orders', orderRoutes);
 app.use('/api/order_food', orderFoodRoutes);
 app.use('/api/orderSummary', orderSummaryRoutes);
+
+app.use("/api/categories", categoryRoutes);
+app.use("/api/foods", foodRoutes);
 
 
 

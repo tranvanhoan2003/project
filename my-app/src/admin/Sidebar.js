@@ -11,10 +11,13 @@ const Sidebar = ({ onMenuClick }) => {
         <button className="menu-btn" onClick={() => onMenuClick("Dashboard")}>
           Trang chủ
         </button>
-        <button className="menu-btn" onClick={() => onMenuClick("Menu")}>
-          Menu
+        <button className="menu-btn" onClick={() => onMenuClick("Category")}>
+          Category
         </button>
-        <button className="menu-btn">Bài viết</button>
+        <button className="menu-btn" onClick={() => onMenuClick("Food")}>
+          Food
+        </button>
+        
         <button className="menu-btn">Slider</button>
         <button className="menu-btn">Hình ảnh</button>
         <button className="menu-btn">Cấu hình</button>

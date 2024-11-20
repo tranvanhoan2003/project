@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Sidebar from "../admin/Sidebar";
 import Dashboard from "../admin/Dashboard";
-import Menu from "../admin/Menu";
+import Food from "../admin/Food";
+import Category from "../admin/Category";
 import "./Admin.css"; 
 
 function Admin() {
@@ -17,7 +18,9 @@ function Admin() {
       <Sidebar onMenuClick={handlePageChange} /> {/* Truyền hàm thay đổi trang vào Sidebar */}
       <div className="main-content">
         {activePage === "Dashboard" && <Dashboard />}
-        {activePage === "Menu" && <Menu />}
+        {activePage === "Category" && <Category />}
+        {activePage === "Food" && <Food />}
+        
       </div>
     </div>
 

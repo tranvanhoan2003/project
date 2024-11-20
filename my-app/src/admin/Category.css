@@ -1,0 +1,74 @@
+.category-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .category-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-form input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .category-form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .category-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .category-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  .category-table th,
+  .category-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .category-table th {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .category-table td button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .category-table td button:first-child {
+    background-color: #2ecc71;
+  }
+  
+  .category-table td button:hover {
+    opacity: 0.8;
+  }
+  

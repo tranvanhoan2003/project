@@ -1,0 +1,118 @@
+   
+.food-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .food-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .food-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .food-form input,
+  .food-form select {
+    padding: 12px;
+    /* width: calc(33% - 10px); */
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .food-form input:focus,
+  .food-form select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 4px rgba(52, 152, 219, 0.6);
+    outline: none;
+  }
+  
+  .food-form button {
+    /* padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; */
+
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .food-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .food-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .food-table th,
+  .food-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .food-table th {
+    background-color: #f4f4f4;
+    /* font-size: 16px; */
+    color: #333;
+  }
+  
+  .food-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .food-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  .food-table button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .food-table button:first-child {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .food-table button:first-child:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+  }
+  
+  .food-table button:last-child {
+    background-color: #e74c3c;
+    color: #fff;
+    margin-left: 5px;
+  }
+  
+  .food-table button:last-child:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
