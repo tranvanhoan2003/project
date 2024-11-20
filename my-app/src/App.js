@@ -1,8 +1,9 @@
 import './App.css';
-import TableList from './TableList';
-// import Menu from './Menu';
-import Menu from './Menu';
-import OrderSummary from './OrderSummary';
+// import TableList from './TableList';
+import TableList from './order/TableList'
+// import Menu from './oder/Menu';
+import Menu from './order/Menu';
+import OrderSummary from './order/OrderSummary';
 import React, { useState } from 'react';
 
 function App() {
@@ -27,8 +28,6 @@ function App() {
     <div className="app">
       <TableList 
       onTableSelected={handleTableSelection} />
-      
-      
       <Menu 
         selectedTableName={selectedTableName} 
         setOrderCode={handleOrderCodeUpdate} 
