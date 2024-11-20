@@ -1,0 +1,18 @@
+.admin-dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #f8f9fa;
+  }
+  

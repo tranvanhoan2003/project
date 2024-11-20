@@ -1,0 +1,151 @@
+/* .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card h2 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .card p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .card button {
+    padding: 10px 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .card.orange {
+    background: #f39c12;
+  }
+  
+  .card.green {
+    background: #27ae60;
+  }
+  
+  .card.blue {
+    background: #3498db;
+  }
+  
+  .card.red {
+    background: #e74c3c;
+  }
+  
+  .card.purple {
+    background: #9b59b6;
+  }
+  
+  .card.pink {
+    background: #fd79a8;
+  }
+  
+  .card.magenta {
+    background: #ff7675;
+  }
+  
+  .card.teal {
+    background: #1abc9c;
+  }
+  
+  .card.lime {
+    background: #2ecc71;
+  }
+   */
+
+
+
+   .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card h2 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+  }
+  
+  .card p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+  }
+  
+  .card button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Màu sắc cho từng loại card */
+  .card.orange {
+    background-color: #f39c12;
+  }
+  
+  .card.green {
+    background-color: #27ae60;
+  }
+  
+  .card.blue {
+    background-color: #3498db;
+  }
+  
+  .card.red {
+    background-color: #e74c3c;
+  }
+  
+  .card.purple {
+    background-color: #9b59b6;
+  }
+  
+  .card.pink {
+    background-color: #fd79a8;
+  }
+  
+  .card.magenta {
+    background-color: #e84393;
+  }
+  
+  .card.teal {
+    background-color: #1abc9c;
+  }
+  
+  .card.lime {
+    background-color: #2ecc71;
+  }
+  
