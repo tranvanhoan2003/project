@@ -16,6 +16,7 @@ const categoryRoutes = require("./routes/admin/categoryRoutes"); // Đường d�
 const foodRoutes = require("./routes/admin/foodRoutes");
 const tableRoutes = require('./routes/admin/tableRoutes');
 const revenueRoutes = require('./routes/admin/revenueRoutes');
+const employeeRoutes = require('./routes/admin/employeeRoutes');
 
 
 
@@ -39,6 +40,7 @@ app.use("/api/categories", categoryRoutes);
 app.use("/api/foods", foodRoutes);
 app.use('/api/tables', tableRoutes);
 app.use("/api/revenue", revenueRoutes);
+app.use('/api/employees', employeeRoutes);
 
 
 
