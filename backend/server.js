@@ -17,6 +17,7 @@ const foodRoutes = require("./routes/admin/foodRoutes");
 const tableRoutes = require('./routes/admin/tableRoutes');
 const revenueRoutes = require('./routes/admin/revenueRoutes');
 const employeeRoutes = require('./routes/admin/employeeRoutes');
+const billRoutes = require('./routes/admin/billRoutes');
 
 
 
@@ -41,7 +42,7 @@ app.use("/api/foods", foodRoutes);
 app.use('/api/tables', tableRoutes);
 app.use("/api/revenue", revenueRoutes);
 app.use('/api/employees', employeeRoutes);
-
+app.use('/api', billRoutes);
 
 
 

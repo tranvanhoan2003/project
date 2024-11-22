@@ -68,8 +68,7 @@ function TableList({ onTableSelected }) {
     return (
         <div className="table-list">
             <div className="table-header">
-                <h3>Thông tin phòng / bàn:</h3>
-                <h4>tên bàn .. ordcode ...</h4>
+                <h3> Danh sách bàn</h3>
             </div>
             <div className="tables">
                 {tables.map((table, index) => (

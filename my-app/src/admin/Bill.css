@@ -1,0 +1,81 @@
+/* Bill.css */
+
+.bill-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.bill-container input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.bill-container input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.bill-container .error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bill-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bill-container table th,
+.bill-container table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.bill-container table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bill-container table td {
+  background-color: #fff;
+}
+
+.bill-container .total {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+  color: #2c3e50;
+}
+
+/* Style for bill item buttons */
+.bill-container .item-button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bill-container .item-button:hover {
+  opacity: 0.8;
+}
+
+.bill-container .item-button:first-child {
+  background-color: #2ecc71;
+}

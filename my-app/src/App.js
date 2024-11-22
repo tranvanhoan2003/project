@@ -6,7 +6,7 @@ import Admin from './page/Admin';
 
 function App() {
   // Định nghĩa vai trò (có thể thay đổi theo dữ liệu đăng nhập, ví dụ từ API)
-  const [role, setRole] = useState('admin'); // mặc định là 'order', có thể thay đổi thành 'admin'
+  const [role, setRole] = useState('order'); // mặc định là 'order', có thể thay đổi thành 'admin'
 
   return (
     <div className="app">

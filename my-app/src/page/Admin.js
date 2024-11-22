@@ -6,6 +6,7 @@ import Food from "../admin/Food";
 import Table from "../admin/Table";
 import Revenue from "../admin/Revenue";
 import Employees from "../admin/Employees";
+import Bill from "../admin/Bill";
 import "./Admin.css"; 
 
 function Admin() {
@@ -26,6 +27,7 @@ function Admin() {
         {activePage === "Table" && <Table/>}
         {activePage === "Revenue" && <Revenue/>}
         {activePage === "Employees" && <Employees/>}
+        {activePage === "Bill" && <Bill/>}
         
       </div>
     </div>

@@ -9,24 +9,32 @@ const Sidebar = ({ onMenuClick }) => {
       <p>Online</p>
       <div className="menu-list">
         <button className="menu-btn" onClick={() => onMenuClick("Dashboard")}>
-          Trang chủ
+          Trang Chủ
         </button>
         <button className="menu-btn" onClick={() => onMenuClick("Category")}>
-          Category
+          {/* Category */}
+          Danh Mục
         </button>
         <button className="menu-btn" onClick={() => onMenuClick("Food")}>
-          Food
+          {/* Food */}
+          Món Ăn
         </button>
         <button className="menu-btn" onClick={() => onMenuClick("Table")}>
-          Table
+          {/* Table */}
+          Bàn
         </button>
         <button className="menu-btn" onClick={() => onMenuClick("Revenue")}>
-          Revenue
+          {/* Revenue */}
+          Doanh Thu
         </button>
         <button className="menu-btn" onClick={() => onMenuClick("Employees")}>
-          Employees
+          {/* Employees */}
+          Nhân Viên
         </button>
-        <button className="menu-btn">Đơn hàng</button>
+        <button className="menu-btn" onClick={() => onMenuClick("Bill")}>
+          {/* Bill */}
+          Hóa Đơn
+        </button>
         <button className="menu-btn">Thành viên</button>
         <button className="menu-btn">Liên hệ</button>
       </div>

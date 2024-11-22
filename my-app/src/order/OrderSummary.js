@@ -78,8 +78,10 @@ function OrderSummary({ selectedTableName, orderCode, orderUpdateTrigger }) {
 
     return (
         <div className="order-summary">
-            <h3>Thông tin hóa đơn: {selectedTableName || 'Chưa chọn bàn'}</h3>
-            <h3>Mã hóa đơn: {orderCode || 'Chưa có mã'}</h3>
+            <div className="bill-info">
+                <h3 className="bill-info__item">Mã hóa đơn: {orderCode}</h3>
+                <h3 className="bill-info__item">Bàn: {selectedTableName}</h3>
+            </div>
             <div className="abc">
                 <h4>id</h4>
                 <h4>Tên món</h4>
@@ -117,6 +119,7 @@ function OrderSummary({ selectedTableName, orderCode, orderUpdateTrigger }) {
             <div className="buttons">
                  <button className="pay-button" onClick={handlePayment}>Thanh toán</button>
              </div>
+             
         </div>
     );
 }

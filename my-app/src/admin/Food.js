@@ -93,6 +93,11 @@ const Food = () => {
     setFormData({ id: "", name: "", price: "", category_id: "" });
     setIsEditing(false);
   };
+   
+  
+  function formatMoney(amount) {
+    return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
 
   return (
     <div className="food-container">
@@ -145,7 +150,9 @@ const Food = () => {
             <tr key={food.id}>
               <td>{food.id}</td>
               <td>{food.name}</td>
-              <td>{food.price.toFixed(2)} đ</td>
+              {/* <td>{food.price.toFixed(0)} đ</td> */}
+              <td>{formatMoney(food.price)} đ</td>
+              
               <td>
                 {categories.find((cat) => cat.id === food.category_id)?.name || "Không có"}
               </td>
