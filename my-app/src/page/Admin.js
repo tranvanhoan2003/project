@@ -4,6 +4,7 @@ import Dashboard from "../admin/Dashboard";
 import Category from "../admin/Category";
 import Food from "../admin/Food";
 import Table from "../admin/Table";
+import Revenue from "../admin/Revenue";
 import "./Admin.css"; 
 
 function Admin() {
@@ -22,6 +23,7 @@ function Admin() {
         {activePage === "Category" && <Category />}
         {activePage === "Food" && <Food />}
         {activePage === "Table" && <Table/>}
+        {activePage === "Revenue" && <Revenue/>}
         
       </div>
     </div>

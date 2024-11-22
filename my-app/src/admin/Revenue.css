@@ -1,0 +1,120 @@
+/* Tổng thể container căn giữa */
+.revenue-summary {
+   /* Căn giữa theo chiều ngang và thêm khoảng cách trên dưới */
+  text-align: center; /* Căn giữa nội dung bên trong */
+ 
+}
+
+/* Tiêu đề lớn */
+.revenue-summary h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Tiêu đề phụ */
+.revenue-summary h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Dropdown menu styling */
+.revenue-summary select {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.revenue-summary select:hover {
+  border-color: #4CAF50;
+  background-color: #eefaf0;
+}
+
+/* Bảng doanh thu */
+.revenue-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header bảng */
+.revenue-summary table thead {
+  background-color: #4CAF50; /* Màu nền header */
+  color: white;
+  font-weight: bold;
+}
+
+.revenue-summary table th,
+.revenue-summary table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Dòng trống nếu không có doanh thu */
+.revenue-summary .no-revenue {
+  text-align: center;
+  font-style: italic;
+  color: #999;
+  padding: 15px 0;
+}
+
+/* Ô hiển thị doanh thu */
+.revenue-summary .revenue-cell {
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+/* Thêm hiệu ứng hover cho bảng */
+.revenue-summary table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Hiệu ứng hover cho các ô dữ liệu */
+.revenue-summary table tbody td {
+  transition: all 0.2s ease;
+}
+
+.revenue-summary table tbody td:hover {
+  background-color: #e8f5e9; /* Màu nền khi hover */
+}
+
+/* Toàn cục body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4; /* Màu nền nhẹ cho toàn màn hình */
+  color: #333; /* Màu chữ mặc định */
+}
+
+/* Đáp ứng cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .revenue-summary {
+      padding: 15px;
+      max-width: 100%;
+  }
+
+  .revenue-summary table th, 
+  .revenue-summary table td {
+      font-size: 0.9rem;
+      padding: 10px;
+  }
+
+  .revenue-summary select {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+  }
+}

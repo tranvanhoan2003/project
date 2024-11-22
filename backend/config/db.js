@@ -5,6 +5,7 @@ const db = mysql.createConnection({
     user: 'root', // Thay đổi nếu bạn có tài khoản khác
     password: '', // Mật khẩu của MySQL
     database: 'abc' // Tên cơ sở dữ liệu của bạn
+    // database: 'database' // Tên cơ sở dữ liệu của bạn
 });
 
 db.connect(err => {

@@ -15,6 +15,7 @@ const orderSummaryRoutes = require('./routes/order/orderSummaryRoutes');
 const categoryRoutes = require("./routes/admin/categoryRoutes"); // Đường dẫn tới file route
 const foodRoutes = require("./routes/admin/foodRoutes");
 const tableRoutes = require('./routes/admin/tableRoutes');
+const revenueRoutes = require('./routes/admin/revenueRoutes');
 
 
 
@@ -37,6 +38,7 @@ app.use('/api/orderSummary', orderSummaryRoutes);
 app.use("/api/categories", categoryRoutes);
 app.use("/api/foods", foodRoutes);
 app.use('/api/tables', tableRoutes);
+app.use("/api/revenue", revenueRoutes);
 
 
 

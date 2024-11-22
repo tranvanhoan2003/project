@@ -20,7 +20,9 @@ const Sidebar = ({ onMenuClick }) => {
         <button className="menu-btn" onClick={() => onMenuClick("Table")}>
           Table
         </button>
-        <button className="menu-btn">Hình ảnh</button>
+        <button className="menu-btn" onClick={() => onMenuClick("Revenue")}>
+          Revenue
+        </button>
         <button className="menu-btn">Cấu hình</button>
         <button className="menu-btn">Đơn hàng</button>
         <button className="menu-btn">Thành viên</button>
